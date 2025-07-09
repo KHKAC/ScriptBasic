@@ -12,6 +12,7 @@ public class BasicSyntax : MonoBehaviour
         두줄로 구성된 주석입니다.
         */
         Debug.Log(transform.position.x);
+        
         if (transform.position.y <= 5f)
         {
             Debug.Log("I'm about to hit the gameObject");
