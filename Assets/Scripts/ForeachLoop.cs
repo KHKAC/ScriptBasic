@@ -15,13 +15,13 @@ public class ForeachLoop : MonoBehaviour
         {
             print(item);
         }
-        for (int i = 0; i < strings.Length; i++)
-        {
-            if (i != 0)
-            {
-                print(strings[i]);
-            }
-        }
+        // for (int i = 0; i < strings.Length; i++)
+        // {
+        //     if (i != 0)
+        //     {
+        //         print(strings[i]);
+        //     }
+        // }
 
         var myList = new List<int>();
         foreach (var item in myList)
