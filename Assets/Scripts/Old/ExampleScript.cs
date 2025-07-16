@@ -4,36 +4,45 @@ using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
 {
+    Renderer rd;
+    Color myColor;
+    void Start()
+    {
+        rd = GetComponent<Renderer>();
+        myColor = GetComponent<Renderer>().material.color;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            GetComponent<Renderer>().material.color = Color.red;
+            myColor = Color.red;
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
-            GetComponent<Renderer>().material.color = Color.green;
+            myColor = Color.green;
         }
         if (Input.GetKeyDown(KeyCode.B))
         {
-            GetComponent<Renderer>().material.color = Color.blue;
+            myColor = Color.blue;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            GetComponent<Renderer>().material.color = Color.white;
+            myColor = Color.white;
         }
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            GetComponent<Renderer>().material.color = Color.yellow;
+            myColor = Color.yellow;
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
-            GetComponent<Renderer>().material.color = Color.clear;
+            myColor = Color.cyan;
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
-            GetComponent<Renderer>().material.color = Color.magenta;
+            myColor = Color.magenta;
         }
+
+        rd.material.color = myColor;
 
     }
 }
