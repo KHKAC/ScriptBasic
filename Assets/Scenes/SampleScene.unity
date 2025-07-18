@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  turnSpeed: 100
+  turnSpeed: 1000
 --- !u!136 &432278977
 CapsuleCollider:
   m_ObjectHideFlags: 0
