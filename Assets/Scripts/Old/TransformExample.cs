@@ -5,7 +5,7 @@ using UnityEngine;
 public class TransformExample : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public float turnSpeed = 1000f;
+    public float turnSpeed = 300f;
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow))
