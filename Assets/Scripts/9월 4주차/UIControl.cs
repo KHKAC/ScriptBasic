@@ -45,4 +45,9 @@ public class UIControl : MonoBehaviour
     {
         Debug.Log(dropdown.value);
     }
+
+    public void OnImageClicked()
+    {
+        Debug.Log("Image is Clicked");
+    }
 }
