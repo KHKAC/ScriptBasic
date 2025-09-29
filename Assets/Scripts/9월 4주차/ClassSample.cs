@@ -50,7 +50,33 @@ public class ClassSample : MonoBehaviour
         }
     }
 
-    public int Pty2 { get; set; }
+    // public int Pty2;
+    [SerializeField] public int Pty2 { get; private set; }
+    public int Pty3;
+
+    float fValue = 0.1f;
+    public float FValue
+    {
+        // get { return fValue + 0.1f; }
+        get => fValue + 0.1f;
+        // set { fValue = value; }
+        set => fValue = value;
+    }
+    string nameStr = "MyName";
+    // public string NameStr
+    // {
+    //     get => "MyName";
+    // }
+    public string NameStr => nameStr;
+
+    #region 인덱서
+    private int[] x = new int[10];
+    public int this[int i]
+    {
+        get { return x[i]; }
+        set { x[i] = value; }
+    }
+    #endregion
 
     void Awake()
     {
