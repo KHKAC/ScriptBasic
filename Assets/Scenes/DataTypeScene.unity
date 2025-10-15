@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 104516912}
   - component: {fileID: 104516913}
   m_Layer: 0
-  m_Name: StructSample
+  m_Name: GenericSample
   m_TagString: ClassSample
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 104516910}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225ae0d1245442145aa03ff31b5e51de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1850aa1c26f9aa6469f91e344592937d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &952923987
